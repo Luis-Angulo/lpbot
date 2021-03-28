@@ -18,12 +18,13 @@
     "watch": "dist/src/server.js",
     "watch-ts": "tsc -w",
     "debug": "npm run build && npm run watch-debug",
-    "serve-debug": "nodemon --inspect dist/server.js",
-    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\""
+    "serve-debug": "nodemon --inspect dist/server.js"
   },
   "dependencies": {
     "discord.js": "12.3.x",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "rxjs": "^6.6.6",
+    "sequelize": "^6.6.2"
   },
   "devDependencies": {
     "@types/jest": "26.0.x",
