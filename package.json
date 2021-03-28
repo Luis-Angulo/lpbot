@@ -15,6 +15,7 @@
     "lint": "eslint \"**/*.ts\"",
     "format": "prettier --write .",
     "build-ts": "tsc",
+    "watch": "dist/src/server.js",
     "watch-ts": "tsc -w",
     "debug": "npm run build && npm run watch-debug",
     "serve-debug": "nodemon --inspect dist/server.js",
@@ -46,6 +47,7 @@
     "ts-mockito": "2.6.x",
     "ts-node": "9.0.x",
     "tslint": "6.1.x",
-    "typescript": "4.0.x"
+    "typescript": "4.0.x",
+    "nodemon": "^2.0.7"
   }
 }
