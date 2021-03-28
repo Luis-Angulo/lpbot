@@ -15,13 +15,16 @@
     "lint": "eslint \"**/*.ts\"",
     "format": "prettier --write .",
     "build-ts": "tsc",
+    "watch": "dist/src/server.js",
     "watch-ts": "tsc -w",
     "debug": "npm run build && npm run watch-debug",
-    "serve-debug": "nodemon --inspect dist/server.js",
-    "watch-debug": "concurrently -k -p \"[{name}]\" -n \"Sass,TypeScript,Node\" -c \"yellow.bold,cyan.bold,green.bold\" \"npm run watch-sass\" \"npm run watch-ts\" \"npm run serve-debug\""
+    "serve-debug": "nodemon --inspect dist/server.js"
   },
   "dependencies": {
-    "discord.js": "12.3.x"
+    "discord.js": "12.3.x",
+    "dotenv": "^8.2.0",
+    "rxjs": "^6.6.6",
+    "sequelize": "^6.6.2"
   },
   "devDependencies": {
     "@types/jest": "26.0.x",
@@ -34,10 +37,7 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.12.0",
     "eslint-plugin-import": "^2.22.1",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.21.2",
-    "eslint-plugin-react-hooks": "^4.0.0",
     "eslint-plugin-unicorn": "^22.0.0",
     "istanbul-api": "3.0.x",
     "istanbul-reports": "3.0.x",
@@ -48,6 +48,7 @@
     "ts-mockito": "2.6.x",
     "ts-node": "9.0.x",
     "tslint": "6.1.x",
-    "typescript": "4.0.x"
+    "typescript": "4.0.x",
+    "nodemon": "^2.0.7"
   }
 }
