@@ -19,7 +19,7 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.ts'],
       },
     },
   },
@@ -30,12 +30,10 @@ module.exports = {
       'ignorePackages',
       {
         js: 'never',
-        jsx: 'never',
         ts: 'never',
-        tsx: 'never',
       },
     ],
-    'import/prefer-default-export': 'off',
+    'import/prefer-default-export': 'yes',
     'class-methods-use-this': 'off',
     'prettier/prettier': [
       'error',

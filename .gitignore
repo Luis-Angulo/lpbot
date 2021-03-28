@@ -38,4 +38,4 @@ dist
 coverage
 
 # ignore config file
-src/config.ts
+config.ts
